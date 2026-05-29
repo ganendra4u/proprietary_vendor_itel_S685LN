@@ -1,0 +1,135 @@
+# proprietary-files.txt
+# Itel S25 (S685LN) - Unisoc UMS9230S
+# Daftar blobs yang perlu diekstrak dari device setelah root
+# Format: path_di_device|path_di_vendor (kalau beda)
+#
+# =============================================
+# CARA PAKAI:
+# 1. Pastikan HP sudah di-root dan ADB aktif
+# 2. Jalankan: ./extract-files.sh
+# 3. Blobs akan otomatis ter-copy ke folder vendor/
+# =============================================
+
+# ----- RIL / Modem -----
+vendor/bin/sprd_ril
+vendor/bin/atchannel
+vendor/bin/modemd
+vendor/lib64/librilcore.so
+vendor/lib64/libimpl-ril.so
+vendor/lib64/libril-sprd.so
+vendor/lib64/librilutils.so
+vendor/lib/librilcore.so
+vendor/lib/libimpl-ril.so
+vendor/lib/libril-sprd.so
+
+# ----- Wi-Fi -----
+vendor/bin/wpa_supplicant
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/firmware/wcn/wifi/marlin2.ini
+vendor/firmware/wcn/wifi/sc2355_2355.ini
+
+# ----- Bluetooth -----
+vendor/bin/wcnd
+vendor/etc/bluetooth/bt_vendor.conf
+vendor/firmware/wcn/bt/wcn_bt_fw.ini
+
+# ----- Audio -----
+vendor/lib/libaudio_v2.so
+vendor/lib64/libaudio_v2.so
+vendor/lib/libaudiohal.so
+vendor/lib64/libaudiohal.so
+vendor/etc/audio_policy_configuration.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/audio_effects.xml
+vendor/etc/mixer_paths.xml
+
+# ----- Camera -----
+vendor/lib/libsprdoem.so
+vendor/lib64/libsprdoem.so
+vendor/lib/libcam.oem8830.so
+vendor/lib64/libcam.oem8830.so
+vendor/lib/hw/camera.ums9230.so
+vendor/lib64/hw/camera.ums9230.so
+
+# ----- Graphics / Display -----
+vendor/lib/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so
+vendor/lib/libGLES_android.so
+vendor/lib64/libGLES_android.so
+vendor/lib/hw/gralloc.ums9230.so
+vendor/lib64/hw/gralloc.ums9230.so
+vendor/lib/hw/hwcomposer.ums9230.so
+vendor/lib64/hw/hwcomposer.ums9230.so
+vendor/lib/libmali.so
+vendor/lib64/libmali.so
+
+# ----- DRM / Widevine -----
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
+
+# ----- Keymaster / Gatekeeper -----
+vendor/lib64/hw/keystore.ums9230.so
+vendor/lib/hw/keystore.ums9230.so
+vendor/lib64/libsprdkeymaster4.so
+vendor/lib64/libsprdgatekeeper.so
+
+# ----- Sensors -----
+vendor/lib/hw/sensors.ums9230.so
+vendor/lib64/hw/sensors.ums9230.so
+vendor/etc/sensor_config.xml
+
+# ----- GPS / GNSS -----
+vendor/lib/hw/gps.ums9230.so
+vendor/lib64/hw/gps.ums9230.so
+vendor/bin/gpsd
+vendor/etc/gps.conf
+vendor/etc/gnss/
+
+# ----- Fingerprint -----
+vendor/lib/hw/fingerprint.ums9230.so
+vendor/lib64/hw/fingerprint.ums9230.so
+
+# ----- Power -----
+vendor/lib/hw/power.ums9230.so
+vendor/lib64/hw/power.ums9230.so
+vendor/bin/charge
+
+# ----- Media / Codec -----
+vendor/lib/libstagefright_sprd_mpeg4enc.so
+vendor/lib64/libstagefright_sprd_mpeg4enc.so
+vendor/lib/libstagefright_sprd_h264enc.so
+vendor/lib64/libstagefright_sprd_h264enc.so
+vendor/lib/libstagefright_sprd_h264dec.so
+vendor/lib64/libstagefright_sprd_h264dec.so
+vendor/lib/libstagefright_sprd_hevcenc.so
+vendor/lib64/libstagefright_sprd_hevcenc.so
+vendor/lib/libstagefright_sprd_hevcdec.so
+vendor/lib64/libstagefright_sprd_hevcdec.so
+vendor/lib/libomx_sprd.so
+vendor/lib64/libomx_sprd.so
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_performance.xml
+
+# ----- Thermal -----
+vendor/bin/thermald
+vendor/etc/thermal-engine.conf
+
+# ----- Misc Unisoc -----
+vendor/bin/refnotify
+vendor/bin/rild
+vendor/lib/libsprd_agdsp.so
+vendor/lib64/libsprd_agdsp.so
+vendor/etc/sprd_frank.conf
+
+# ----- Firmware -----
+vendor/firmware/modem_bank0.bin
+vendor/firmware/modem_bank1.bin
+vendor/firmware/modem_bank8.bin
+
+# =============================================
+# CATATAN:
+# Daftar ini adalah TEMPLATE berdasarkan device
+# Unisoc sejenis. Setelah ekstrak, beberapa path
+# mungkin beda. Cek dan sesuaikan!
+# =============================================
