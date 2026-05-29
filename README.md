@@ -43,10 +43,10 @@ chmod +x setup-makefiles.sh
 
 | Repo | Link |
 |------|------|
-| Device Tree | [android_device_itel_S685LN](https://github.com/YOUR_USERNAME/android_device_itel_S685LN) |
-| Kernel | [android_kernel_itel_ums9230](https://github.com/YOUR_USERNAME/android_kernel_itel_ums9230) |
+| Device Tree | [android_device_itel_S685LN](https://github.com/ganendra4u/android_device_itel_S685LN) |
+| Kernel | [android_kernel_itel_ums9230](https://github.com/ganendra4u/android_kernel_itel_ums9230) |
 | Vendor | **Repo ini** |
 
 ## Maintainer
 
-- **[Your Name]** - [@GitHub](https://github.com/YOUR_USERNAME)
+- **ganendra4u** - [@GitHub](https://github.com/ganendra4u)
